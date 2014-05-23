@@ -44,6 +44,11 @@ public interface WebSocket {
 	   public static final int CLOSE_RECONNECT = 7;
 
 	   /**
+		 * Connection forcefully closed, do not call onClose()
+		 */
+		public static final int CLOSED_FORCEFULLY_SILENT = 88;
+
+		/**
 	    * Fired when the WebSockets connection has been established.
 	    * After this happened, messages may be sent.
 	    */

@@ -22,6 +22,20 @@ public class WebSocketException extends Exception {
 
    private static final long serialVersionUID = 1L;
 
+	public static class WebSocketAlreadyConnectedException extends WebSocketException {
+
+		private static final long serialVersionUID = 1L;
+
+		public WebSocketAlreadyConnectedException(String message, Throwable t) {
+			super(message, t);
+		}
+
+		public WebSocketAlreadyConnectedException(String message) {
+			super(message);
+		}
+
+	}
+
    public WebSocketException(String message) {
       super(message);
    }
